@@ -1,0 +1,112 @@
+.main_box {
+    background-color: rgb(243, 241, 241);
+    width: 60vw;
+    min-height: 70vh;
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden; /* Prevents overflow on rounded corners */
+}
+
+.main_box .left_card {
+    background-image: url('../assets/login_img.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+
+.main_box .right_card {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.text .large_text {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.text .small_text {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+}
+
+.right_card form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+form > input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+form > button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #3a3a3a;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+form > button:hover {
+    background-color: #555;
+}
+
+.extra_login_opt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+    color: #666;
+}
+
+.extra_login_opt div {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.extra_login_opt ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+}
+
+.extra_login_opt li img {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+    aspect-ratio: 1/1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+}
+
+.Registerlink {
+    color: rgb(16, 15, 15,0.76);
+    cursor: pointer;
+    font-weight: 650;
+}

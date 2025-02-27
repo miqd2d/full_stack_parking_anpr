@@ -1,0 +1,65 @@
+.customer_information_area {
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.left_area{
+    margin-top: 50px;
+}
+
+.right_area {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.customer_User_logs {
+    max-height: 400px; /* Set maximum height for logs container */
+}
+
+.table-container {
+    max-height: 300px; /* Set a height for the scrollable area */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.log-table {
+    width: 100%; /* Ensure the table takes full width */
+    border-collapse: collapse; /* Ensure table borders are collapsed */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.scrollable-body {
+    display: block; /* Change display to block to allow scrolling */
+    max-height: 200px; /* Set max height for rows */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border-radius: 10px;
+}
+
+.log-table th {
+    position: sticky; /* Make headers sticky */
+    top: 0; /* Stick them to the top */
+    background: white; /* Set background for headers */
+    z-index: 1; /* Ensure they stay above other elements */
+}
+
+.log-table th, .log-table td {
+    padding: 8px; /* Padding inside cells */
+    text-align: left; /* Left-align text */
+    border-bottom: 1px solid #ddd; /* Bottom border for cells */
+}
+
+/* Status color styling */
+.status-in {
+    background-color: green;
+    color: white;
+}
+
+.status-out {
+    background-color: red;
+    color: white;
+}

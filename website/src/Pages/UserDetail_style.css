@@ -1,0 +1,193 @@
+/* Main container for the user detail page */
+.user_detail_container {
+    padding: 20px; /* Light background color for contrast */
+    min-height: 100vh; /* Ensure the container takes the full height */
+    
+}
+
+.user_container{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_area{
+    min-width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.searchbox{
+    min-width: 40vw;
+    display: flex;
+    gap: 20px;
+}
+
+.searchbox button {
+    max-width: 5vw;
+}
+
+
+/* Information area flexbox layout */
+.information_area {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 20px; 
+}
+
+/* User information section styling */
+.user_info, .user_logs {
+    flex: 1; /* Allow both sections to flex equally */
+    padding: 15px; /* Padding inside sections */
+    background: #fff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+
+.user_info table {
+    width: 100%; 
+    border-collapse: collapse; 
+}
+
+/* Table headers and cells styling */
+.user_info th, .user_info td {
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    text-align: left; 
+}
+
+
+.user_info th {
+    background-color: #f2f2f2; 
+    font-weight: bold; 
+}
+
+
+.information_area {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+}
+
+
+/* Add a custom modal style if needed */
+.modal {
+    position: fixed; /* Fixed position for the modal */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex; /* Flex for centering content */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    z-index: 1000; /* High z-index for visibility */
+}
+
+/* Modal content style */
+.modal-content {
+    background: #fff; /* White background */
+    padding: 20px; /* Padding inside modal */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    max-width: 500px; /* Maximum width for modal */
+    width: 100%; /* Full width on small screens */
+}
+
+.box_main_large{
+    height: 40vh;
+    width: 30vw;
+    background: #0C0028;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid white;
+    overflow: hidden;
+}
+
+.heading_large{
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#webcam{
+    height: 86%;
+    width: 100%;
+}
+
+/* Table styles */
+.log-table {
+    max-height: 400px; 
+    overflow-y: auto; 
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #e0e0e0;
+    font-size: 14px;
+    border-radius: 8px;
+    overflow: scroll;
+    border-radius: 10px;
+}
+
+.log-table th, .log-table td {
+    padding: 10px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    text-align: left;
+}
+
+.log-table th {
+    /* background-color: #3a3a3a; */
+    background: #4505ab;
+    color: #e0e0e0;
+    font-weight: 600;
+}
+
+.log-table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.log-table tr:hover {
+    background-color: rgba(255, 255, 255, 0.07);
+}
+
+/* Conditional styling for In/Out Status */
+.status-in {
+    background-color: #28a745; /* Green background for "IN" */
+    color: #ffffff;
+    font-weight: bold;
+    padding: 6px;
+    border-radius: 4px;
+    text-align: center;
+    
+}
+
+.status-out {
+    background-color: #dc3545; /* Red background for "OUT" */
+    color: #ffffff;
+    font-weight: bold;
+    padding: 6px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.User_logs{
+    
+    border-radius: 10px;
+}
+
+h2{
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+}

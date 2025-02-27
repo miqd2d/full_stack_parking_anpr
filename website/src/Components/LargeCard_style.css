@@ -1,0 +1,72 @@
+.box_main_large{
+    height: 40vh;
+    width: 30vw;
+    background: #0C0028;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid white;
+    overflow: hidden;
+}
+
+.heading_large{
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#webcam{
+    height: 86%;
+    width: 100%;
+}
+
+/* Table styles */
+.log-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #e0e0e0;
+    font-size: 14px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.log-table th, .log-table td {
+    padding: 10px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    text-align: left;
+}
+
+.log-table th {
+    /* background-color: #3a3a3a; */
+    background: #4505ab;
+    color: #e0e0e0;
+    font-weight: 600;
+}
+
+.log-table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.log-table tr:hover {
+    background-color: rgba(255, 255, 255, 0.07);
+}
+
+/* Conditional styling for In/Out Status */
+.status-in {
+    background-color: #28a745; /* Green background for "IN" */
+    color: #ffffff;
+    font-weight: bold;
+    padding: 6px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.status-out {
+    background-color: #dc3545; /* Red background for "OUT" */
+    color: #ffffff;
+    font-weight: bold;
+    padding: 6px;
+    border-radius: 4px;
+    text-align: center;
+}

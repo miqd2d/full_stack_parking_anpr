@@ -1,0 +1,53 @@
+.customer_nav_mainbox{
+    height: 100vh;
+    width: 8vw;
+    background-color: rgb(238, 227, 245);
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    left: -7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 40px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.Logout {
+    cursor: pointer;
+    background-color: rgb(199, 179, 211);
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Password , .Payment_icon , .Delete_icon{
+    cursor: pointer;
+    background-color: rgb(199, 179, 211);
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: 600;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.Logout:hover , .Password:hover , .Payment_icon:hover {
+    background-color: rgb(161, 142, 173);
+}
+
+.together{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}

@@ -1,0 +1,79 @@
+.mainBox {
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px 40px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+
+h3, h4 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: bold;
+    color: #555;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+.phone-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.phone-group select {
+    width: 20%;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error-text {
+    color: red;
+    font-size: 0.9em;
+    margin-top: -7px;
+    margin-bottom: 10px;
+}
+
+.register_checkbox {
+    display: flex;
+    flex-direction: row;
+    color: #5555555d;
+}
+
+#check_terms {
+    padding: 2px;
+    width: 4%;
+    margin: 10px;
+}
+
+#terms_message{
+    text-align:start ;
+}

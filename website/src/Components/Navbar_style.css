@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.mainbox{
+    height: 100vh;
+    width: 6vw;
+    background-color: rgb(238, 227, 245);
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    left: -6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.Home , .Stats , .UserInfo {
+    cursor: pointer;
+    background-color: rgb(199, 179, 211);
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: 600;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.Home:hover , .Stats:hover , .UserInfo:hover {
+    background-color: rgb(161, 142, 173);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}

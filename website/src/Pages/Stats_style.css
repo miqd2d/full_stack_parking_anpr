@@ -1,0 +1,33 @@
+.chartarea {
+    display: flex;
+    gap: 40px;
+    flex-wrap:wrap ;
+    max-width: 70vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: #3f3d72;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+    background-color: #ddd;
+}
+
+.pagination button.active {
+    background-color: #8884d8;
+    color: white;
+    font-weight: bold;
+}

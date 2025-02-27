@@ -1,0 +1,83 @@
+.payment-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.payment-central-component{
+    margin-left: 80px;
+    margin-top: 40px;
+    height: 80vh;
+    width: 60vw;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+.payment-option-pagination {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.payment-option-pagination > button {
+    background: white;
+    max-width: 18%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: black;
+    border-radius: 10px;
+}
+
+#upi-logo{
+    width: 90%;
+}
+
+/* .form-group-amount{
+} */
+
+.payment-form{
+    position: relative;
+}
+
+.form-group-UPI {
+    position: absolute;
+    display: flex;
+    top: 40px;
+    flex-direction: row;
+    width: 60%;
+    gap: 20px;
+}
+.form-group-CARD {
+    position: absolute;
+    top: -20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.form-group-CARD input {
+    width: 90%;
+}
+
+.amount-button-group{
+    width: 100%;
+    position: relative;
+    gap: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    bottom: -180px;
+}
+
+#payment-button{
+    background-color: #3a3a3a;;
+    position: relative;
+    top: 20px;
+    max-width: 10vw;
+}
