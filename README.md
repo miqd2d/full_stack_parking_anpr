@@ -1,4 +1,4 @@
-# 🚗 Full Stack Parking ANPR
+# 🚗 AutoPark.AI -> Full Stack Parking ANPR
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
