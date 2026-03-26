@@ -4,6 +4,10 @@ import easyocr
 import numpy as np
 import mysql.connector
 import re
+from dotenv import load_dotenv
+import os
+
+load_dotenv()  # reads .env and sets env vars
 
 # Initialize EasyOCR Reader
 reader = easyocr.Reader(['en'])
@@ -11,10 +15,10 @@ num_list = set()  #test
 
 # Connect to MySQL database
 db = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="6622",
-    database="anpr_system"
+    host= os.getenv("DB_HOST"),
+    user= os.getenv("DB_USER"),
+    password= os.getenv("DB_PASSWORD"),
+    database= os.getenv("DB_DATABASE")
 )
 cursor = db.cursor()
 
@@ -30,7 +34,7 @@ def insert_into_db(number_plate_text):
 model = YOLO('best.pt')  # Replace with your model path
 
 # Initialize webcam
-cap = cv2.VideoCapture(1)  # '0' is typically the default webcam device
+cap = cv2.VideoCapture(0)  # '0' is typically the default webcam device
 
 
 # Set desired frame width and height

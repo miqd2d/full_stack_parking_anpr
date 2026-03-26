@@ -1,3 +1,4 @@
+require("dotenv").config({ path: require("path").join(__dirname, "../.env") });
 const express = require('express');
 const mysql = require('mysql2');
 const bcrypt = require('bcrypt');
@@ -6,8 +7,8 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 
 const app = express();
-const PORT = process.env.PORT || 5000;
-const SECRET_KEY = 'aa7ce337934a8113583bd216b89126d4'; // Use a secure key in production
+const PORT = process.env.BACKENDPORT || 5000;
+const SECRET_KEY = process.env.SECRET_KEY; // Use a secure key in production
 
 app.use(cors());
 
@@ -15,10 +16,10 @@ app.use(bodyParser.json());
 
 // MySQL connection
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '6622',
-    database: 'anpr_system'
+    host: process.env.DB_HOST || 'localhost',
+    user: process.env.DB_USER || 'root',
+    password: process.env.DB_PASSWORD || "6622",
+    database: process.env.DB_DATABASE || 'anpr_system'
 });
 
 db.connect(err => {
