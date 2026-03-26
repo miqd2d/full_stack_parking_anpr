@@ -51,29 +51,56 @@ Follow these instructions to get a copy of the project up and running on your lo
     cd full_stack_parking_anpr
     ```
 
-2.  **Install dependencies:**
+2.  **Install Node dependencies:**
     ```sh
+    cd server
     npm install
     ```
+3. **Install dependencies:**
+    ```sh
+    cd model
+    pip install -r requirements.txt
+    ```
 
-3.  **Configure Environment Variables:**
+4.  **Configure Environment Variables:**
     Create a `.env` file by copying the example file.
     ```sh
     cp .env.example .env
+
+    BACKENDPORT= <Keep 5000>
+    SECRET_KEY= <Use SSL to generate a strong key for JWT>
+    DB_HOST= <Usually "localhost">
+    DB_USER= <Your MySQL User>
+    DB_PASSWORD= <It's Password>
+    DB_DATABASE= <The name of the database you set after importing the SQL script from Database folder>
+
     ```
     Update the `.env` file with your database credentials and other required API keys.
 
-4.  **Run the Application:**
+5.  **Run the Application:**
+    5.1 Run the python model
     ```sh
-    npm start
+    cd model
+    python main_project.py
     ```
-    The application will be accessible at `http://localhost:5000`.
+    5.2 Run the backend server
+    ```sh
+    cd server
+    node server.js
+    ```
+    5.3 Go to the website folder to start application 
+    ```sh
+    cd website
+    npm run dev
+    ```
+    The application will be accessible at `http://localhost:5173`.
 
 ---
 
 ### 📂 Project Structure
 ```
 full_stack_parking_anpr/
+├── database/anpr.sql   # Database file to import in mysql for data
 ├── node_modules/       # Project dependencies
 ├── server/             # Backend API (Node.js/Express)
 │   ├── controllers/    # Logic for handling requests
@@ -94,6 +121,7 @@ full_stack_parking_anpr/
 3.  Users can search for and reserve available parking slots.
 4.  Administrators can log in to access the admin dashboard to manage parking slots, view user data, and generate reports.
 
+* If you have imported the mySQL script in your pc you can enter `admin` as username and `admin123` as password to log into admin dashboard and any `aaravsha84` from the database and password `password123`
 ---
 
 ### 🤝 Contributing
