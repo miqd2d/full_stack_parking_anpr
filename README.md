@@ -72,6 +72,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 ---
 
 ### 📂 Project Structure
+```
 full_stack_parking_anpr/
 ├── node_modules/       # Project dependencies
 ├── server/             # Backend API (Node.js/Express)
@@ -83,7 +84,7 @@ full_stack_parking_anpr/
 │   └── views/          # React components and pages
 ├── .env                # Environment variables
 └── package.json        # Project metadata and scripts
-
+```
 ---
 
 ### 🧪 Usage
