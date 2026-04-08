@@ -109,7 +109,7 @@ app.post('/login', async (req, res) => {
 
 const authenticateJWT = (req, res, next) => {
     const token = req.headers['authorization'];
-    console.log('Token received:', token); // Log the token
+    // console.log('Token received:', token); // Log the token
 
     if (!token) {
         console.log('No token provided');
